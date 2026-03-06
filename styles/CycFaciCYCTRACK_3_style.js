@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_CycFaciCYCPARKSPACE_6 = function(feature, resolution){
+var style_CycFaciCYCTRACK_3 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -16,13 +16,12 @@ var style_CycFaciCYCPARKSPACE_6 = function(feature, resolution){
     var textAlign = "left";
     var offsetX = 0;
     var offsetY = 0;
-    var placement = 'point';
+    var placement = 'line';
     if ("" !== null) {
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        image: new ol.style.RegularShape({radius: 5.6 + size, points: 4,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(247,255,246,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(114,155,111,1.0)'})}),
+        stroke: new ol.style.Stroke({color: 'rgba(183,72,75,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 3.268}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
